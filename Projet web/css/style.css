@@ -1,0 +1,129 @@
+/* -------------------------------- BACKGROUND --------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    height: 30vh;
+    background-color: aqua;
+}
+
+.top h1 {
+    text-align: center;
+
+}
+
+@keyframes rotationTitre {
+    0% {
+        transform: rotate(0deg);
+        position: absolute;
+        top: 50px;
+        left: 0%;
+    }
+
+    10% {
+        transform: rotate(0deg);
+        position: absolute;
+        top: 50px;
+        left: 0%;
+    }
+
+
+    45% {
+        transform: rotate(180deg);
+        position: absolute;
+        top: 50px;
+        left: 85%;
+    }
+
+    55% {
+        transform: rotate(180deg);
+        position: absolute;
+        top: 50px;
+        left: 85%;
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+        position: absolute;
+        top: 50px;
+        left: 0%;
+    }
+}
+
+.top h1 {
+
+    animation: rotationTitre 3s linear infinite;
+}
+
+
+.top h1:hover {
+    color: burlywood;
+}
+
+.background {
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor .25s infinite;
+    background-color: currentColor;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+
+@keyframes wheelHueColor {
+
+    from,
+    to {
+        color: hsl(324, 70%, 45%);
+    }
+
+    10% {
+        color: hsl(360, 65%, 45%);
+    }
+
+    20% {
+        color: hsl(36, 80%, 45%);
+    }
+
+    30% {
+        color: hsl(72, 75%, 35%);
+    }
+
+    40% {
+        color: hsl(108, 65%, 35%);
+    }
+
+    50% {
+        color: hsl(144, 75%, 35%);
+    }
+
+    60% {
+        color: hsl(180, 75%, 35%);
+    }
+
+    70% {
+        color: hsl(216, 60%, 45%);
+    }
+
+    80% {
+        color: hsl(252, 65%, 50%);
+    }
+
+    90% {
+        color: hsl(288, 60%, 40%);
+    }
+
+
+}
+
+.background p {
+    color: black;
+    margin: 15px auto;
+    width: 80%;
+    font-size: 2em;
+    animation: 3s ease-in;
+}
